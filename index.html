@@ -18,20 +18,224 @@
 </head>
 <body>
   <!-- Navegação -->
+   <nav>
+      <ul class="navlist">
+        <li class="active"><a href="#home">Início</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+
+      <div>
+        <ul class="social-network">
+          <li>
+            <div id="switch" onclick="toggleMode()">
+              <button></button>
+              <span></span>
+            </div>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com" target="_blank">
+              <figure id="fig1"></figure>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com" target="_blank">
+              <figure id="fig2"></figure>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Ícone do menu mobile -->
+       <div class="bx bx-menu" id="menu-icon"></div>
+   </nav>
   
   <!-- Conteúdo principal -->
   <main>
     <!-- Seção Home -->
+     <section id="home" class="home">
+      <div class="home-presentation">
+        <p class="my-name">Meu nome é</p>
+        <h1 id="name">ISABELLI</h1>
+        <h1 id="last-name">NARDIN</h1>
+        <h3><p>sou</p> Recreadora infantil <span><strong>|</strong> Artista independente</span></h3>
+        <div class="button">
+          <a href="#projects" class="project-button">Projetos</a>
+          <a href="#contact" class="contact-button">Contato</a>
+        </div>
+      </div>
+      <img src="./img/principal.jpg" alt="laptop" class="home-mac">
+     </section>
     
     <!-- Seção Sobre Mim -->
+     <section class="about" id="about">
+      <div class="about-img">
+        <img src="./img/eu.jpg" alt="">
+      </div>
+      <div class="about-text">
+        <h2><span>SOBRE</span> MIM</h2>
+        <p>
+          Tenho 16 anos e sou apaixonada pela arte e pela educação infantil.
+          Minha jornada na arte começou desde cedo com influência do meu irmão que também sempre foi apaixonado por desenhos, grafites e arte no geral. Aprendi meus primeiros traços com ele e depois foi surgindo a curiosidade de aprender mais e me aprimorei de forma autônoma com pesquisas, vídeos e prática. Hoje tenho minha loja Benzinho Macramê onde faço peças (principalmente acessórios como pulseiras e colares) utilizando as técnicas do Macramê.
+        </p>
+        <p>
+          Com as crianças não foi diferente, crianças sempre foram minha paixão desde que eu era uma. Conforme o tempo passou comecei a me interessar na área de crianças com neurodivengência e tenho estudado de forma autônoma desde então, procurando saber cada vez mais sobre o comportamento das crianças neurodivergentes e como lidar com a socialização dessas crianças.
+        </p>
+        <button class="button-cv">
+          <a href="./assets/curriculo.pdf" download="CV - Isabelli Nardin" class="btn-cv"> Download CV</a>
+        </button>
+      </div>
+      <img src="./img/balls.svg" alt="balls" class="balls">
+     </section>
+
+    <!-- Seção Habilidades -->
+     <section class="skills" id="skills">
+      <div class="line"></div>
+      <div class="tech">
+        <h2>HABILIDADES</h2>
+        <div class="techs">
+          <div class="card">
+            <img src="img/html-icon.svg" alt="ícone HTML">
+            <p>HTML</p>
+          </div>
+          <div class="card">
+            <img src="img/css-icon.svg" alt="ícone CSS">
+            <p>CSS</p>
+          </div>
+          <div class="card">
+            <img src="img/js-icon.svg" alt="ícone JavaScript">
+            <p>JavaScript</p>
+          </div>
+          <div class="card">
+            <img src="img/react-js-icon.svg" alt="ícone React.js">
+            <p>React.js</p>
+          </div>
+          <div class="card">
+            <img src="img/node-js-icon.svg" alt="ícone Node.js">
+            <p>Node.js</p>
+          </div>
+          <div class="card">
+            <img src="img/python-icon.svg" alt="ícone Python">
+            <p>Python</p>
+          </div>
+          <div class="card">
+            <img src="img/sql-icon.svg" alt="ícone SQL">
+            <p>SQL</p>
+          </div>
+          <div class="card">
+            <img src="img/git-icon.svg" alt="ícone git">
+            <p>Git</p>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="tool">
+        <h2>CURSOS</h2>
+        <div class="tools">
+          <div class="card">
+            <img src="img/github-icon.svg" alt="ícone github">
+            <p>Artes visuais</p>
+          </div>
+          <div class="card">
+            <img src="img/vs-code-icon.svg" alt="ícone VSCode">
+            <p>LIBRAS</p>
+          </div>
+          <div class="card">
+            <img src="img/figma-icon.svg" alt="ícone figma">
+            <p>Inglês</p>
+          </div>
+          <div class="card">
+            <img src="img/notion-icon.svg" alt="ícone Notion">
+            <p>Percussão</p>
+          </div>
+        </div>
+      </div>
+     </section>
   
     <!-- Seção de Projetos -->
+     <section id="projects" class="projects">
+      <div class="line"></div>
+      <div class="main-text">
+        <h2>Meus <span>Projetos</span></h2>
+      </div>
+      <!-- Container do carrossel -->
+       <div class="carousel-container">
+        <!-- botões de navegação -->
+         <button class="carousel-button prev" aria-label="Projeto anterior">&#10094;</button>
+         <button class="carousel-button next" aria-label="Próximo projeto">&#10095;</button>
+       <!-- Slides do carrossel -->
+        <div class="carousel-slides">
+          <!-- slide 1 - Login -->
+           <div class="carousel-slide active">
+            <div class="row">
+              <img src="img/login-land-rover.png" alt="print pagina de login">
+              <div class="layer">
+                <h5>Tela de login</h5>
+                <p>Esse repositório é uma atualização/melhoria do repositório anterior "formulario-login". Nele utilizo apenas HTML e CSS.</p>
+              </div>
+            </div>
+           </div>
+           <!-- Slide 2 - Cronômetro -->
+            <div class="carousel-slide">
+              <div class="row">
+                <img src="img/cronometro.png" alt="print cronometro">
+              <h5>Relógio Digital</h5>
+              <p>Desenvolvido um relógio digital utilizando HTML, CSS e JS.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 - Formulário -->
+         <div class="carousel-slide">
+          <div class="row">
+            <img src="img/form.png" alt="pagina de form">
+            <div class="layer">
+              <h5>Formulário de avaliação</h5>
+              <p>Desenvolvido formulário de avaliação da mentoria.</p>
+            </div>
+          </div>
+         </div>
+        </div>
+      </div>
+     </section>
    
     <!-- Seção de Contato -->
-
+     <section class="contact" id="contact">
+      <div class="contact-text">
+        <div class="main-text">
+          <h2>entre em <span>contato</span></h2>
+        </div>
+      </div> 
+      <div class="contact-form">
+        <!-- Serviço gratuito (formsubmit) que envia os dados para o email descrito abaixo-->
+        <form action="https://formsubmit.co/nardineduc@gmail.com" method="POST" id="contactForm">
+         <input type="text" name="name" placeholder="Digite seu nome" required>
+         <input type="email" name="email" placeholder="Digite seu melhor email" required>
+         <input type="hidden" name="_captcha"  value="false">
+         <textarea type="text" name="text" cols="35" rows="10" placeholder="Envie sua mensagem" required></textarea>
+         <br>
+         <input type="submit" value="enviar" class="submit" required>
+        </form>
+        <!-- Mensagem de agradecimento (Após enviar formulário) -->
+         <div id="thankYouMessage" class="thank-you-message">
+          Obrigada! Aguarde meu retorno!
+         </div>
+      </div>
+    </section>
   </main>
 
   <!-- Rodapé -->
+   <section class="end">
+    <div class="last-text">
+      <p>by CodeMaster Dev <img src="img/bussola.svg" alt=""> Alguns direitos reservados.</p>
+    </div>
+
+    <div class="top">
+      <!-- Seta adicionada do serviço: boxicons -->
+       <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+   </section>
 
   <!-- Scripts -->
   <script src="script.js"></script>

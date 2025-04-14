@@ -62,7 +62,7 @@ if (savedTheme) {
 }
 
 
-// Animação so título principal
+// Animação do título principal
 // Seleciona o elemento 'título' e define as variáveis para animação
 const titleElement = document.querySelector('#name');
 const text = "ISABELLI";
@@ -86,7 +86,7 @@ function animateText() {
         } else {
             isTyping = true;
             // alterna a cor entre preto e laranja
-            currentColor = currentColor === (document.documentElement.classList.contains('light') ? 'black' : '#fff') ? '#c94c16' : (document.documentElement.classList.contains('light') ? 'black' : '#fff');
+            currentColor = currentColor === (document.documentElement.classList.contains('light') ? 'black' : '#fff') ? '#688066' : (document.documentElement.classList.contains('light') ? 'black' : '#fff');
             titleElement.style.color = currentColor;
         }
     }

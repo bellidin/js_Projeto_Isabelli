@@ -13,10 +13,10 @@
   font-size: 62.5%;
 
   --bg-color: #000000;
-  --second-bg-color: #C94C16;
+  --second-bg-color: #588055;
   --text-color: #ffffff;
-  --second-text-color: #FF4D00;
-  --card-bg-color: hsla(18, 80%, 44%, 0.5);
+  --second-text-color: #688066;
+  --card-bg-color: #688066f5;
 
   --first-font: 'Lato', sans-serif;
   --second-font: 'Inter', sans-serif;
@@ -31,9 +31,9 @@
   --bg-image-home: url("./img/bg-home-dark-3.jpg");
   --position-bg-home: 15rem -7rem;
   --logo-github: url("./img/logo-github-white.svg");
-  --logo-github-hover: url("./img/logo-github-orange.svg");
+  --logo-github-hover: url("./img/logo-github-green.svg");
   --logo-linkedin: url("./img/logo-linkedin-white.svg");
-  --logo-linkedin-hover: url("./img/logo-linkedin-orange.svg");
+  --logo-linkedin-hover: url("./img/logo-linkedin-green.svg");
   
   --button-text-color-hover: #FFFFFF;
 
@@ -46,11 +46,11 @@
 
 .light {
   --bg-color: #ffffff;
-  --second-bg-color: #C94C16;
+  --second-bg-color: #588055;
   
   --text-color: #000000;
-  --second-text-color: #FF4D00;
-  --card-bg-color: hsla(18, 80%, 44%, 1);
+  --second-text-color: #688066;
+  --card-bg-color: #688066ee;
 
   --highlight-color: rgba(0, 0, 0, 0.25);
   --switch-bg-url: url("./img/sun.svg");
@@ -62,17 +62,17 @@
   --bg-image-home: url("./img/bg-home-light-3.avif");
   --position-bg-home: -70rem 0;
   --logo-github: url("./img/logo-github-black.svg");
-  --logo-github-hover: url("./img/logo-github-orange.svg");
+  --logo-github-hover: url("./img/logo-github-green.svg");
   --logo-linkedin: url("./img/logo-linkedin-black.svg");
-  --logo-linkedin-hover: url("./img/logo-linkedin-orange.svg");
+  --logo-linkedin-hover: url("./img/logo-linkedin-green.svg");
 
   --button-text-color-hover: #000000;
 
   --bg-contact: url("./img/bg-contact-white.png");
-  --border-form: 2px solid hsla(18, 80%, 44%, 1);
+  --border-form: 2px solid #688066ee;
   --bg-form: rgba(255, 255, 255, 0.726);
 
-  --color-social-media: #C94C16;
+  --color-social-media: #588055;
 }
 
 body {
@@ -442,7 +442,7 @@ img.balls {
 }
 
 .line {
-  border: 2px #FF4D00 solid;
+  border: 2px #535D4A solid;
   width: 17rem;
   margin-bottom: 1rem;
 }
@@ -457,7 +457,7 @@ img.balls {
 .techs {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   max-width: 80rem;
   margin-bottom: 5rem;
@@ -498,7 +498,7 @@ img.balls {
 
 .card:hover {
   cursor: pointer;
-  background-color: #FF4D00;
+  background-color: #535D4A;
   transform: translateY(-10px);
 }
 

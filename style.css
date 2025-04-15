@@ -12,7 +12,7 @@
 :root {
   font-size: 62.5%;
 
-  --bg-color: #000000;
+  --bg-color: #33392f;
   --second-bg-color: #588055;
   --text-color: #ffffff;
   --second-text-color: #688066;
@@ -45,7 +45,7 @@
 }
 
 .light {
-  --bg-color: #ffffff;
+  --bg-color: #C5D1BA;
   --second-bg-color: #588055;
   
   --text-color: #000000;
@@ -68,7 +68,7 @@
 
   --button-text-color-hover: #000000;
 
-  --bg-contact: url("./img/bg-contact-white.png");
+  --bg-contact: url("./img/bg-contact-light.png");
   --border-form: 2px solid #688066ee;
   --bg-form: rgba(255, 255, 255, 0.726);
 
@@ -238,6 +238,7 @@ section {
   position: absolute;
   z-index: -2;
   right: 5rem;
+  border-radius: 10px;
 }
 
 .home-presentation {
@@ -330,14 +331,16 @@ section {
 
 /* ---------------- About ----------------------- */
 .about {
-  position: relative;
-  display: flex;
-  gap: 5rem;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  margin: 0;
+    position: relative;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+  
 
   /* Novas propriedades para a animação */
   opacity: 0; /* Inicialmente invisível */
@@ -394,6 +397,14 @@ section {
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 2.2rem;
+}
+
+.custom-link {
+  color: #91A282;
+}
+
+.custom-link:visited {
+  color: #7aa078;
 }
 
 .button-cv {
@@ -728,7 +739,6 @@ form textarea {
   justify-content: center;
   gap: 2rem;
   background: var(--bg-form);
-  margin-top: 2rem;
 }
 
 .last-text p {
